@@ -1,0 +1,132 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+/* body {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  color: #5a5a5a;
+} */
+
+@font-face {
+  font-family: "HSSantokki";
+  src: url("font/HSSantokki-Regular.ttf") format("truetype");
+  font-weight: normal;
+} 
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url("font/MaruBuri-Regular.ttf") format("truetype");
+  font-weight: normal;
+} 
+
+.introduction, .address, .wedding-images {
+  font-family: 'MaruBuri', serif;
+}
+
+.story {
+  font-family: 'HSSantokki', serif;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Centered text */
+.top-image-caption {
+  position: absolute;
+  top: 5%;
+  padding-left: 25%;
+  font-size: 25px;
+  color:#0f3d0a;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+  /* left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.top-image-caption #invite {
+  font-size: 20px;
+  margin-bottom: 0.2rem;
+}
+
+.message {
+  font-size: 40px;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  /* min-width: 100%; */
+  height: 32rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/* large */
+@media (min-width: 40em) { 
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .top-image-caption {
+    position: absolute;
+    top: 20%;
+    padding-left: 30%;
+    font-size: 60px;
+    color:#0f3d0a;
+  }  
+  
+  .top-image-caption #invite {
+    font-size: 40px;
+  }
+  
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+body {
+  color: #f2edd1;
+  background-color: #636d52c8;
+}
